@@ -1,0 +1,21 @@
+{
+  "name": "genai-language-detector",
+  "version": "1.0.0",
+  "description": "Production-grade GenAI Language Detector web application powered by stylometric NLP and machine learning.",
+  "scripts": {
+    "start": "python -m uvicorn backend.main:app --host 0.0.0.0 --port 8000",
+    "dev": "python -m uvicorn backend.main:app --reload --host 127.0.0.1 --port 8000",
+    "train": "python -m backend.detector.trainer",
+    "test": "python -m unittest tests/test_detector.py"
+  },
+  "keywords": [
+    "genai",
+    "ai-detector",
+    "nlp",
+    "machine-learning",
+    "stylometry",
+    "fastapi"
+  ],
+  "author": "Antigravity Engineering",
+  "license": "MIT"
+}
